@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JS Loops & Functions</title>
+</head>
+
+<body>
+    <!-- <h1>Loops & Functions</h1> -->
+    <h1>Functions</h1>
+    <ol>
+        <li>Write a program using a for loop and print the numbers from 200 till 0 with the decrement of 3.</li><br>
+        <li>Write a program to display your name 10 times using a while loop.</li><br>
+        <li>Write a program to print a sum of even numbers in between 1-10 using a while loop.</li><br>
+        <li>Write a program to display a number between 1 to 5 using the do-while loop.</li><br>
+        <li>Write a function to print the sum of two numbers.</li><br>
+        <li>Invoke a function and pass values to the 'width' & 'height' parameters inside the <br><br>
+            parenthesis store the return value in a variable 'Area' and prints it in the console.</li>
+    </ol>
+
+
+
+    <!--------------------------JavaScript------------------------>
+
+    <!-- <script> -->
+
+    <script>
+
+        // -------------------- 1 -------------------------
+
+
+        // for (var i = 200; i >= 0; i -= 3) {
+        // console.log(i);
+        // }
+
+        // -------------------- 2 -------------------------
+
+        // n = 10;
+        // i = 1;
+        // while (i <= n) { 
+        //     console.log("Noreen") }
+
+
+        // -------------------- 3 ------------------------- 
+
+        // let even = 1; 
+        // let num=10; 
+        // let sum=0; 
+        // while (even <=num) { 
+        // if (even % 2==0) { 
+        // sum=sum + even; 
+        // } //
+        // even++; // } 
+        // console.log("The sum of even numbers from 1 - 10 is:", sum); 
+
+
+        // -------------------- 4 ------------------------- 
+
+        // let number=1; 
+        // do { 
+        // console.log(number); 
+        // number=number + 1; 
+        // } while
+        //     (number <= 5) 
+
+
+        // -------------------- 5 ------------------------- 
+
+        // function add(a, b) { // console.log("The sum
+        // of two numbers is ", a + b);
+        // }
+
+        // add(2, 9);
+
+        // -------------------- 6 -------------------------
+
+
+
+        // function areaOfrec(width, height) {
+
+        //     var area = (width * height);
+        //     console.log(" The Area of a Rectangle is:", area); 
+        // }
+        // var avg=areaOfrec(30, 10); 
+
+
+        // -----------------------------------------  Nested Loops  ---------------------------------------------------
+
+        // for (let index = 1; index <= 10; index++) {
+        //     console.log('Table of', index);
+        //      for (let tOf = 1; tOf <= 10; tOf++) {
+        //         console.log(tOf + "*" + index + "=" + index * tOf);
+        //     }
+        // } 
+
+
+        // var arr = [  [1,2], [3,4], [5,6]];for (var i=0; i < arr.length; i++) {
+        //    console.log(arr[i]);}
+
+        // var arr = [[1, 2], [3, 4], [5, 6]]; for (var i = 0; i < arr.length; i++) {
+        //     console.log(arr[i]);
+        // }
+
+
+    
+
+//     let  Users = {name:"jack", passWord:"123456789"};
+//     Users3 = {
+//         name:"ali", passWord:"23456789", 
+//         name:"Ahmad", passWord:"3456789"
+//     }
+   
+//    Users.push(Users3);
+    
+
+//   function addUsers(name,passWord) {
+   
+//     console.log(Users3)
+//   }
+
+//  addUsers(jack, 123456789,ali,23456789,Ahmad,3456789)
+
+
+
+
+
+// let a = "JavaScript";
+// let b = 6;
+// console.log(a + b);
+// console.log(typeof (a+b));
+// const a1 = {
+//    name: "Noreen",
+//    class:"Web Dev",
+//    rollno: "1"
+
+// }
+// a1["freind"] = "Umair"
+// a1["fClass"] = "web dev"
+// console.log(a1);
+
+// let a = 10;
+// console.log('++a =', ++a);
+// console.log( 'a++ =', a++);
+// console.log('--a =', --a);
+// console.log('a--= ',a--);
+
+
+// switch (key) {
+//     case value:
+        
+//         break;
+
+//     default:
+//         break;
+// }
+
+// use of logical operator to find whether the age of a person lies between 10 and 20?
+// let age = prompt("What is your age?")
+// if (age >= 10 && age <= 20) {
+//     console.log("Your age is lies between 10 & 20")
+// }
+// else{
+//     console.log("Your age is not lies between 10 & 20")
+// }
+
+
+// using loops and objects
+
+// let marks = {
+//     Ali: 100,
+//     monika: 30,
+//     Sara:40
+// }
+// for (let i = 0; i < Object.keys(marks).length; i++) {
+//     console.log("The marks of " + Object.keys(marks)[i] + " is " + marks[Object.keys(marks)[i]]);
+    
+// }
+
+// Write a program to print "try again" untill the user print the correct number
+
+// let cn = 43;
+// let i; 
+// while (i!=cn) {
+//     console.log("Try again")
+//     i = prompt("Enter a number")
+// }
+
+// console.log("You have entered the correct number")
+
+// using function find the mean of 5 numbers
+// const mean = (a,b,c,d,e) =>{
+//  return(a+b+c+d+e)/5
+// }
+// console.log(mean(4,5,6,7,8))
+
+
+
+// tamplete literals (use backtick ` insead of quoats to define a string, and can insert variables inside string)
+// let name = "Ali";
+// let fname = "Sara";
+// console.log(`${name} is a freind of ${fname}`)
+// let str = "har\"";
+// console.log(str.length)
+
+// let str2 = "please give me Rs 1000"
+
+// let amount = Number.parseInt(str2.slice(18))
+// console.log(amount)
+// console.log(typeof amount)
+
+
+// let num = [2,4,5,6,7,89,10]
+// for(let i of num ){
+//     console.log(i)
+// }
+
+
+// create an array of numbers and take input from the user to add numbers to this array
+
+// let arr = [1,2,3,4,5,83,7]
+// let a = prompt("Enter a number")
+// a = Number.parseInt(a)
+// arr.push(a)
+// console.log(arr)
+
+//  add numbers to this array untill a number is equal to 0
+
+// let arr = [1,2,3,4,5,83,7]
+// let a;
+// do {
+//      a = prompt("Enter a number")
+// a = Number.parseInt(a)
+// arr.push(a)
+// } while (a!= 0);
+
+// console.log(arr)
+
+// let x=Math.random()*10
+// console.log(x)
+
+// let num = Math.random()
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let age = prompt( "Enter your age")
+// age = Number.parseInt(age)
+// let num1 = 10;
+// num1 = Number.parseInt(num1)
+// let num2 = 6;
+// num2 = Number.parseInt(num2)
+// const comNumbers=(num1,num2)=>{
+//     return num1>num2?
+// }
+// if (num1>num2) {
+//     console.log(`yes ${num1} is greater than ${num2}`)
+// } else {
+//     console.log("no")
+// }
+
+// let num1 = 10;
+// num1 = Number.parseInt(num1)
+// let num2 = 6;
+// num2 = Number.parseInt(num2)
+// const comNumbers=(num1,num2)=>{
+//     return num1<num2? true:false
+// };
+
+// if (num1>num2) {
+//     console.log(`yes ${num1} is greater than ${num2}`)
+// } else {
+//     console.log("no")
+// }
+
+// console.log(comNumbers(10,6));
+
+
+
+
+// let age = 12;
+// age = Number.parseInt(age)
+
+// const canDrive=(age)=>{
+//     return age>18? true:false
+// }
+// if (age<18) {
+//     console.log("you are not eligibale")
+// } else {
+//     console.log("yes you are eligibale")
+// }
+
+
+// let name = []
+
+
+// let number = prompt("How many colors do you want")
+// const cname=(colors)=>{
+// return name.push(colors)  
+// }
+// let colors= ["green", "red", "purple"]
+// for (let index = 0; index < 3; index++) {
+  
+//     console.log(colors)
+// }
+
+// cname(green, red, purple)
+
+
+
+
+
+
+
+// function pData(Name, age) {
+//     prompt("Enter your Name")
+//     prompt("Enter your age")
+//   let nAge= Name + age;
+//     let nAge= (prompt("Enter your Name"))+ age (prompt("Enter your age")) ;
+//     return nAge;
+// }
+// console.log("The final data is:", pData())    
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
